@@ -232,7 +232,7 @@ a:hover {
 .ex .ex-item {
   padding-left: 30px;
 }
-.ex-item::before {
+.head-ex-item::before {
   padding-left: 8%;
   content: "▹";
   position: absolute;
