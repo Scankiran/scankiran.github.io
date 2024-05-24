@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head><meta charset="UTF-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -28,14 +28,18 @@
 
 
 
-<meta property="og:title" content="Tags" />
-<meta property="og:description" content="Personal Website of Said CANKIRAN" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/tags/" />
+  
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content="Personal Website of Said CANKIRAN"/>
+
+<meta property="og:url" content="//localhost:1313/tags/">
+  <meta property="og:site_name" content="Said CANKIRAN">
+  <meta property="og:title" content="Tags">
+  <meta property="og:description" content="Personal Website of Said CANKIRAN">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Tags">
+<meta name="twitter:description" content="Personal Website of Said CANKIRAN">
 
 
 <link rel="stylesheet" href="../bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="../css/header.css" media="all">
@@ -76,19 +80,18 @@
     }
 
     body::-webkit-scrollbar {
-        width: .5em;
-        height: .5em;
+        height: 0px;
+        width: 8px;
         background-color: var(--background-color);
     }
     
     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px var(--background-color);
         border-radius: 1rem;
     }
     
     ::-webkit-scrollbar-thumb {
         border-radius: 1rem;
-        background-color: var(--secondary-color);
+        background: #b0b0b0;
         outline: 1px solid var(--background-color);
     }
 
@@ -98,6 +101,7 @@
         background-color: var(--background-color);
     }
 </style>
+
 
 <meta name="description" content="Tags of Said CANKIRAN">
 <link rel="stylesheet" href="../css/list.css" media="all">
@@ -132,11 +136,13 @@ Tags | Said CANKIRAN
 
 
 
-<header>
+
+
+<header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
-            <a class="navbar-brand primary-font text-wrap" href="../">
+            <a class="navbar-brand primary-font text-wrap" href="//localhost:1313/">
                 
                 <img src="../img/favicon.ico" width="30" height="30"
                     class="d-inline-block align-top">
@@ -161,7 +167,7 @@ Tags | Said CANKIRAN
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="../#about" aria-label="about">
+                        <a class="nav-link" href="//localhost:1313/#about" aria-label="about">
                             About Me
                         </a>
                     </li>
@@ -169,7 +175,7 @@ Tags | Said CANKIRAN
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="../#experience"
+                        <a class="nav-link" href="//localhost:1313/#experience"
                             aria-label="experience">
                             Experience
                         </a>
@@ -178,7 +184,7 @@ Tags | Said CANKIRAN
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="../#education"
+                        <a class="nav-link" href="//localhost:1313/#education"
                             aria-label="education">
                             Education
                         </a>
@@ -191,13 +197,23 @@ Tags | Said CANKIRAN
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="../#contact"
+                        <a class="nav-link" href="//localhost:1313/#contact"
                             aria-label="contact">
                             Contact
                         </a>
                     </li>
                     
 
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="../blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
                     
                     
                     
@@ -246,9 +262,89 @@ Tags | Said CANKIRAN
     <h2 class="text-center pb-2">Tags</h2>
     <div class="row">
         
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="../tags/github-pages/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Github Pages">Github Pages</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">May 23, 2024</span>
+                        <a href="../tags/github-pages/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="../tags/hugo/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Hugo">Hugo</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">May 23, 2024</span>
+                        <a href="../tags/hugo/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="../tags/papermod/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Papermod">Papermod</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">May 23, 2024</span>
+                        <a href="../tags/papermod/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="row justify-content-center">
             <div class="col-auto m-3">
                 
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="../tags/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="../tags/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="../tags/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
             </div>
         </div>
     </div>
@@ -318,12 +414,12 @@ Tags | Said CANKIRAN
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             <div class="pb-2">
-                <a href="" title="Said CANKIRAN">
+                <a href="//localhost:1313/" title="Said CANKIRAN">
                     <img alt="Footer logo" src="../img/favicon.ico"
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2023  All rights reserved
+            &copy; 2024  All rights reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
