@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=../../img/favicon.ico type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="../../css/font.css" media="all">
+
+
+
+  
+
+
+<meta property="og:url" content="//localhost:1313/blogs/zerotohugo/">
+  <meta property="og:site_name" content="Said CANKIRAN">
+  <meta property="og:title" content="Zero to Hugo">
+  <meta property="og:description" content="In this article, I&#39;ll write about how to create your personal website or landing page or any website which you want to show to internet with Hugo and Github Pages. And ofcourse with nocode. ">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blogs">
+    <meta property="article:published_time" content="2024-05-23T09:30:21+05:30">
+    <meta property="article:modified_time" content="2024-05-23T09:30:21+05:30">
+    <meta property="article:tag" content="Github Pages">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Papermod">
+    <meta property="article:tag" content="Profile">
+
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Zero to Hugo">
+<meta name="twitter:description" content="In this article, I&#39;ll write about how to create your personal website or landing page or any website which you want to show to internet with Hugo and Github Pages. And ofcourse with nocode. ">
+
+
+<link rel="stylesheet" href="../../bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="../../css/header.css" media="all">
+<link rel="stylesheet" href="../../css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="../../css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+<meta name="description" content="In this article, I&#39;ll write about how to create your personal website or landing page or any website which you want to show to internet with Hugo and Github Pages. And ofcourse with nocode. ">
+<link rel="stylesheet" href="../../css/single.css">
+
+
+<script defer src="../../fontawesome-6/all-6.4.2.js"></script>
+
+  <title>
+Zero to Hugo | Said CANKIRAN
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="//localhost:1313/">
+                
+                <img src="../../img/favicon.ico" width="30" height="30"
+                    class="d-inline-block align-top">
+                
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:1313/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:1313/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:1313/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:1313/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="../../blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="https://trendyol.github.io" title="">
+                            
+                            Trendyol
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Zero to Hugo</h1>
+            <div class="text-center">
+              Said Çankıran 
+              <small>|</small>
+              May 23, 2024
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <div class="featured-image">
+            <img class="img-fluid mx-auto d-block" src="../../content/zeroToHugo/hugoCover.png" alt="Zero to Hugo">
+          </div>
+          
+          <article class="page-content  p-2">
+          <h3 id="introduction">Introduction</h3>
+<p>In this article, I&rsquo;ll write about how to create your personal website or landing page or any website which you want to show to internet with Hugo and Github Pages. And ofcourse with nocode.</p>
+<p>No matter what field you work in, with a little bit of Git and Terminal knowladge, you can easily set up and deploy the site you want. If you&rsquo;re ready, let&rsquo;s start.</p>
+<p>First of all, what is Hugo? Hugo is a static site generator. By editing the config files on top of template themes, you can create a site with your own configurations. So, in fact, you can create your personal website by editing a text file. You can use hundreds of different template themes. Among these themes, you can find hundreds of examples in different categories such as Portfolio, Personal Blog, and Landing Page.</p>
+<p>So, What is Hugo? Hugo works fast and is lightweight. No matter how big your site is, it builds quickly and creates the website from your static content in a few seconds. For example, it takes around 5 seconds to build a site which has 60 blog posts and, each post containing 2-3 images. Additionally, as I mentioned earlier, there are many theme alternatives.Also, it is open-source. If you want, you can contribute as well. And I think most importantly, it explains the documentation in detail. And it has a Q&amp;A site. If you have any problem, it can be quickly resolved since others might have faced the same issue before.</p>
+<p>Enough introduction. Let&rsquo;s start creating our site.
+What we need are a text editor (like Sublime), a Terminal, and a GitHub account.</p>
+<h3 id="installation">Installation</h3>
+<p>Let&rsquo;s start by installing Hugo on our computer. Since I have a Mac, I&rsquo;ll continue with the Mac installation. If you have a different operating system, it&rsquo;s worth checking out <a href="https://gohugo.io/installation/">Hugo Install</a>.</p>
+<p>I&rsquo;ll use <a href="https://brew.sh">Brew</a> to install Hugo. Brew makes things easy here.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>brew install hugo
+</span></span></code></pre></div><p>After installing Hugo, you need to install Git on your device. I also install Git with Brew.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>brew install git
+</span></span></code></pre></div><p>That&rsquo;s it for the setup. Now we can start creating our site.</p>
+<h3 id="create-web-site">Create Web Site</h3>
+<p>Let&rsquo;s create a new terminal tab by going to the location where we want to store the files of our site.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>hugo new site personal_website
+</span></span><span style="display:flex;"><span>cd personal_website
+</span></span><span style="display:flex;"><span>git init
+</span></span></code></pre></div><p>Let&rsquo;s create the basis of our site with these 3 commands. So what do these 3 commands do?</p>
+<p>With the command in line 1, a site base is created using hugo&rsquo;s own configurations. If we go to the files it created, we will see that it created folders such as content and static for us that we will use frequently in the future.\n
+The command on the 2nd line goes to the details of the created folder. \n
+The command on the 3rd line initializes git to the base folder of our website. \n</p>
+<p>Now it&rsquo;s time to integrate a theme we like. I&rsquo;ll go to <a href="https://themes.gohugo.io">Hugo Themes</a> and add a theme I like. As the theme, I choose <a href="https://themes.gohugo.io/themes/hugo-papermod/">PaperMod</a>, one of the most popular themes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git submodule add --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+</span></span></code></pre></div><p>With the command above, we clone the PaperMod theme to our themes folder.</p>
+<p>PaperMod uses a YAML configuration file. So we need a yaml file. We&rsquo;ll create a config.yaml file with the following command. (It can vary from theme to theme. Some themes use TOML, while others use YAML. This information can be found on the theme&rsquo;s installation page or sample sites.)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>touch config.yaml
+</span></span></code></pre></div><p>After adding the YAML file, I&rsquo;ll copy the content of the <a href="https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-installation/#sample-configyml">sample YAML file</a> provided by the theme into our local empty YAML file.</p>
+<p>Now it&rsquo;s time to see our site locally. We&rsquo;ll use the <code>hugo server</code> command to bring up our site on localhost. This command will create a static website for us using the content, images, and themes we added, and deploy it on our localhost. When we run the command, we should see an output giving us our local address like this.</p>
+<p><img src="../../content/zeroToHugo/hugoServer.png" alt=""></p>
+<p>And ta-da! When we go to localhost, we should see a page like this.</p>
+<p><img src="../../content/zeroToHugo/exampleSite.png" alt=""></p>
+<p>This command works with the hotreload mechanism. So, as soon as you edit and save the yaml file, all your changes will be reflected automatically.</p>
+<p>After this, you need to edit the content a little. For example, I change the Title and Content parameters under the HomeInfoParams in the yaml file. And it is instantly reflected and my site is updated as follows.</p>
+<p><img src="../../content/zeroToHugo/changedExampleSite.png" alt=""></p>
+<p>While you need to add images in the yaml file, for the parameters, you should go to the static folder in the folder where our site is located, add the images there and make it recognize the images by run <code>hugo server</code> again. You can then show the images by giving the parameter a path. For example; <code>static/img/favicon.png</code>.</p>
+<p>Explanations of the parameters here are on <a href="https://themes.gohugo.io/themes/hugo-papermod/">PaperMod</a>&rsquo;s page. If you wish, you can edit the variables yourself by changing them.</p>
+<h3 id="create-blog-post">Create Blog Post</h3>
+<p>We have organized our site in general terms. Now it&rsquo;s time for the blog post part.</p>
+<p>First of all, there is something we need to pay attention to here. Our theme needs to support the blog theme. In this way, we can display the blog posts which we write on our site. So, what can we do if it doesn&rsquo;t support it? We can create our blog by creating a different site project and choosing a theme that supports blog posts. Then, we can then redirect from our personal site to our blog site. But, for now, let&rsquo;s keep continue with a theme which supported blogs :).</p>
+<p>While creating our article, you can create a markdown file in accordance with the structure by using the command below. All you have to do is open the relevant markdown file and edit it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>hugo new content posts/my-first-post.md
+</span></span></code></pre></div><p>After running the command, the content of our sample markdown file looks like this.</p>
+<p><img src="../../content/zeroToHugo/exampleMD.png" alt=""></p>
+<p>Since our blog post is marked as draft, it might not appear on our site.
+You can build that draft files by using the <code>hugo server -D</code> or <code>hugo server --buildDrafts</code> commands.</p>
+<p>Markdown is a file and writing format which supports rich formatting. This article you&rsquo;re reading is also created using markdown formats :) Everything except the images in this article was created using markdown formats. It supports all kinds of formats you can think of, such as mathematical formulas, codes, quotes, collapsible headings, lists, etc.</p>
+<p>For more information and a cheat sheet about Markdown, you can <a href="https://www.markdownguide.org/cheat-sheet/">check here</a>. I recommend reviewing it.</p>
+<h3 id="deployment">Deployment</h3>
+<p>We&rsquo;ve written our blog post. Now it&rsquo;s time to deploy our site.</p>
+<p>First, let&rsquo;s update the baseURL parameter in our config file with the address we&rsquo;ll use before building our site. For example, mine is <a href="https://scankiran.github.io">https://scankiran.github.io</a>. Your one is will be probably https://[username].github.io.</p>
+<p>After defining our base URL, let&rsquo;s build our site with Hugo. This time, since we&rsquo;re going to send it to an address instead of localhost, we need to get the output of the build files. For this, we&rsquo;ll use the <code>hugo</code> command. This command will produce a static site output for us from the posts we wrote and the config file we created and collect it under the public folder.</p>
+<p><img src="../../content/zeroToHugo/hugoExport.png" alt=""></p>
+<p>All we need to do next is upload this public folder to GitHub.</p>
+<p>First, we need a public repository created with the name <code>username+github.io</code> on GitHub. For example, mine is <a href="https://github.com/Scankiran/scankiran.github.io">scankiran.github.io</a>.</p>
+<p>After creating the repository, we can proceed in two different ways. We can either directly upload the public folder from the upload files section.</p>
+<p>Or the other option is to push the public folder to this repository using classic git commands. My preference will be this way.</p>
+<p>After pushing our files, let&rsquo;s go to the pages section in the repository settings and set <strong>Deploy From Branch - Main</strong>.</p>
+<p><img src="../../content/zeroToHugo/repoSettings.png" alt=""></p>
+<p>After a few minutes, our site will be built and deployed by GitHub Actions. We can also check the processes from the Actions section.</p>
+<p><img src="../../content/zeroToHugo/workflowResult.png" alt=""></p>
+<p>At the same time, the result of the operation can be seen with a green tick next to our commit message on the main page.</p>
+<p><img src="../../content/zeroToHugo/workflowResultWithCommit.png" alt=""></p>
+<p>In this article, we prepared our personal website from scratch together with Hugo and GitHub Pages. I hope it was helpful to you.</p>
+<p>See you in the next articles.</p>
+<hr>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#create-web-site">Create Web Site</a></li>
+        <li><a href="#create-blog-post">Create Blog Post</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="//localhost:1313/tags/github-pages" target="_blank">Github Pages</a></li>
+              
+              <li class="list-inline-item"><a href="//localhost:1313/tags/hugo" target="_blank">Hugo</a></li>
+              
+              <li class="list-inline-item"><a href="//localhost:1313/tags/papermod" target="_blank">Papermod</a></li>
+              
+              <li class="list-inline-item"><a href="//localhost:1313/tags/profile" target="_blank">Profile</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="../../js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  false ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="../../js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/Scankiran" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://linkedin.com/said-cankiran" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <a href="https://twitter.com/saidcankiran" aria-label="twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+            <path fill="#03a9f4"
+                d="M42,37c0,2.762-2.239,5-5,5H11c-2.762,0-5-2.238-5-5V11c0-2.762,2.238-5,5-5h26c2.761,0,5,2.238,5,5 V37z" />
+            <path fill="#fff"
+                d="M36,17.12c-0.882,0.391-1.999,0.758-3,0.88c1.018-0.604,2.633-1.862,3-3 c-0.951,0.559-2.671,1.156-3.793,1.372C31.311,15.422,30.033,15,28.617,15C25.897,15,24,17.305,24,20v2c-4,0-7.9-3.047-10.327-6 c-0.427,0.721-0.667,1.565-0.667,2.457c0,1.819,1.671,3.665,2.994,4.543c-0.807-0.025-2.335-0.641-3-1c0,0.016,0,0.036,0,0.057 c0,2.367,1.661,3.974,3.912,4.422C16.501,26.592,16,27,14.072,27c0.626,1.935,3.773,2.958,5.928,3c-1.686,1.307-4.692,2-7,2 c-0.399,0-0.615,0.022-1-0.023C14.178,33.357,17.22,34,20,34c9.057,0,14-6.918,14-13.37c0-0.212-0.007-0.922-0.018-1.13 C34.95,18.818,35.342,18.104,36,17.12" />
+        </svg>
+    </a>
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <div class="pb-2">
+                <a href="//localhost:1313/" title="Said CANKIRAN">
+                    <img alt="Footer logo" src="../../img/favicon.ico"
+                        height="40px" width="40px">
+                </a>
+            </div>
+            &copy; 2024  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div></footer><script src="../../bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

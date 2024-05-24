@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Example on Said CANKIRAN</title>
+    <link>//localhost:1313/tags/example/</link>
+    <description>Recent content in Example on Said CANKIRAN</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Apr 2021 23:29:21 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/example/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown Syntax</title>
+      <link>//localhost:1313/blogs/firsttry/</link>
+      <pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
+      <guid>//localhost:1313/blogs/firsttry/</guid>
+      <description>Zero to Hugo: Build Websites With Nocode In this article, I&amp;rsquo;ll write about how to create your personal website or landing page or any website which you want to show to internet with Hugo and Github Pages. And ofcourse with nocode.&#xA;Hangi alanda çalışıyorsanız çalışın ufak bir git ve terminal kullanımı ile istediğiniz siteyi kolayca ayağa kaldırabilir ve deploy edebilirsiniz. Hazırsanız başlayalım.&#xA;// Resim&#xA;Öncelikle Hugo nedir? Hugo bir statik site oluşturucusudur.</description>
+    </item>
+  </channel>
+</rss>

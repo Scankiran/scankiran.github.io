@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<meta name="generator" content="Hugo 0.119.0"><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.125.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -29,14 +29,18 @@
 
 
 
-<meta property="og:title" content="Said CANKIRAN" />
-<meta property="og:description" content="Personal Website of Said CANKIRAN" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
+  
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Said CANKIRAN"/>
-<meta name="twitter:description" content="Personal Website of Said CANKIRAN"/>
+
+<meta property="og:url" content="//localhost:1313/">
+  <meta property="og:site_name" content="Said CANKIRAN">
+  <meta property="og:title" content="Said CANKIRAN">
+  <meta property="og:description" content="Personal Website of Said CANKIRAN">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Said CANKIRAN">
+<meta name="twitter:description" content="Personal Website of Said CANKIRAN">
 
 
 <link rel="stylesheet" href="./bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="./css/header.css" media="all">
@@ -77,19 +81,18 @@
     }
 
     body::-webkit-scrollbar {
-        width: .5em;
-        height: .5em;
+        height: 0px;
+        width: 8px;
         background-color: var(--background-color);
     }
     
     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px var(--background-color);
         border-radius: 1rem;
     }
     
     ::-webkit-scrollbar-thumb {
         border-radius: 1rem;
-        background-color: var(--secondary-color);
+        background: #b0b0b0;
         outline: 1px solid var(--background-color);
     }
 
@@ -100,12 +103,13 @@
     }
 </style>
 
+
 <meta name="description" content=Personal&#32;Website&#32;of&#32;Said&#32;CANKIRAN>
 <link rel="stylesheet" href="./css/index.css" media="all">
 <link rel="stylesheet" href="./css/projects.css" media="all">
 
 
-<script defer src="./fontawesome-5/all-5.15.4.js"></script>
+<script defer src="./fontawesome-6/all-6.4.2.js"></script>
 
   <title>
 Said CANKIRAN
@@ -137,14 +141,16 @@ Said CANKIRAN
 
 
 
-<header>
+
+
+<header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
-            <a class="navbar-brand primary-font text-wrap" href="./">
+            <a class="navbar-brand primary-font text-wrap" href="//localhost:1313/">
                 
                 <img src="./img/favicon.ico" width="30" height="30"
-                    class="d-inline-block align-top">
+                    class="d-inline-block style="vertical-align: super !important;">
                 
                 
             </a>
@@ -166,7 +172,7 @@ Said CANKIRAN
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="./#about" aria-label="about">
+                        <a class="nav-link" href="//localhost:1313/#about" aria-label="about">
                             About Me
                         </a>
                     </li>
@@ -174,7 +180,7 @@ Said CANKIRAN
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="./#experience"
+                        <a class="nav-link" href="//localhost:1313/#experience"
                             aria-label="experience">
                             Experience
                         </a>
@@ -183,7 +189,7 @@ Said CANKIRAN
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="./#education"
+                        <a class="nav-link" href="//localhost:1313/#education"
                             aria-label="education">
                             Education
                         </a>
@@ -196,13 +202,23 @@ Said CANKIRAN
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="./#contact"
+                        <a class="nav-link" href="//localhost:1313/#contact"
                             aria-label="contact">
                             Contact
                         </a>
                     </li>
                     
 
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="./blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
                     
                     
                     
@@ -221,7 +237,7 @@ Said CANKIRAN
                         
                         <div class="text-center">
                             <button id="theme-toggle">
-                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: baseline;">
                                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                                 </svg>
                                 <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -761,7 +777,6 @@ Said CANKIRAN
 <li>VIPER and Reactive Kit</li>
 <li>Planning features, and working coordinate with team members.</li>
 </ul>
-
                             </div>
                         </div>
                         
@@ -863,7 +878,13 @@ Said CANKIRAN
                     </div>
                     
                     <div class="text-center pt-3">
-                        <a href="mailto:s.cankiran@hotmail.com" class="btn">
+                        <a 
+                            href='
+                                    mailto:s.cankiran@hotmail.com
+                                  '
+                            target="_blank"
+                            class="btn"
+                        >
                             Mail me
                         </a>
                     </div>
@@ -952,12 +973,12 @@ Said CANKIRAN
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             <div class="pb-2">
-                <a href="" title="Said CANKIRAN">
+                <a href="//localhost:1313/" title="Said CANKIRAN">
                     <img alt="Footer logo" src="./img/favicon.ico"
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2023  All rights reserved
+            &copy; 2024  All rights reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
