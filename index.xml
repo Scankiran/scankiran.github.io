@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Said CANKIRAN</title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on Said CANKIRAN</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 May 2024 09:30:21 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zero to Hugo</title>
-      <link>//localhost:1313/blogs/zerotohugo/</link>
+      <link>/blogs/zerotohugo/</link>
       <pubDate>Thu, 23 May 2024 09:30:21 +0530</pubDate>
-      <guid>//localhost:1313/blogs/zerotohugo/</guid>
+      <guid>/blogs/zerotohugo/</guid>
       <description>Introduction In this article, I&amp;rsquo;ll write about how to create your personal website or landing page or any website which you want to show to internet with Hugo and Github Pages. And ofcourse with nocode.&#xA;No matter what field you work in, with a little bit of Git and Terminal knowladge, you can easily set up and deploy the site you want. If you&amp;rsquo;re ready, let&amp;rsquo;s start.&#xA;First of all, what is Hugo?</description>
     </item>
   </channel>
