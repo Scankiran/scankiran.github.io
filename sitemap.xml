@@ -3,7 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/blogs/</loc>
-    <lastmod>2024-05-23T09:30:21+05:30</lastmod>
+    <lastmod>2024-06-23T14:20:58+03:00</lastmod>
+  </url><url>
+    <loc>/blogs/dripioterms/</loc>
+    <lastmod>2024-06-23T14:20:58+03:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-06-23T14:20:58+03:00</lastmod>
+  </url><url>
+    <loc>/blogs/dripioprivacypolicy/</loc>
+    <lastmod>2024-06-23T14:20:38+03:00</lastmod>
   </url><url>
     <loc>/tags/github-pages/</loc>
     <lastmod>2024-05-23T09:30:21+05:30</lastmod>
@@ -15,9 +24,6 @@
     <lastmod>2024-05-23T09:30:21+05:30</lastmod>
   </url><url>
     <loc>/tags/profile/</loc>
-    <lastmod>2024-05-23T09:30:21+05:30</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2024-05-23T09:30:21+05:30</lastmod>
   </url><url>
     <loc>/tags/</loc>
