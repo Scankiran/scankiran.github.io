@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/blogs/</loc>
+    <loc>/dripio/</loc>
     <lastmod>2024-06-23T14:20:58+03:00</lastmod>
   </url><url>
-    <loc>/blogs/dripioterms/</loc>
+    <loc>/dripio/dripioterms/</loc>
     <lastmod>2024-06-23T14:20:58+03:00</lastmod>
   </url><url>
     <loc>/</loc>
     <lastmod>2024-06-23T14:20:58+03:00</lastmod>
   </url><url>
-    <loc>/blogs/dripioprivacypolicy/</loc>
+    <loc>/dripio/dripioprivacypolicy/</loc>
     <lastmod>2024-06-23T14:20:38+03:00</lastmod>
+  </url><url>
+    <loc>/blogs/</loc>
+    <lastmod>2024-05-23T09:30:21+05:30</lastmod>
   </url><url>
     <loc>/tags/github-pages/</loc>
     <lastmod>2024-05-23T09:30:21+05:30</lastmod>

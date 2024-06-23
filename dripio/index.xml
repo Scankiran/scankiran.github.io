@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Said CANKIRAN</title>
-    <link>/</link>
-    <description>Recent content on Said CANKIRAN</description>
+    <title>Dripios on Said CANKIRAN</title>
+    <link>/dripio/</link>
+    <description>Recent content in Dripios on Said CANKIRAN</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Jun 2024 14:20:58 +0300</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/dripio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DripioTerms</title>
       <link>/dripio/dripioterms/</link>
@@ -21,13 +21,6 @@
       <pubDate>Sun, 23 Jun 2024 14:20:38 +0300</pubDate>
       <guid>/dripio/dripioprivacypolicy/</guid>
       <description>Dripio Privacy Policy This Privacy Policy describes how Packify (&amp;ldquo;we,&amp;rdquo; &amp;ldquo;us,&amp;rdquo; or &amp;ldquo;our&amp;rdquo;) collects, uses, and shares your personal information when you use our mobile application (&amp;ldquo;App&amp;rdquo;). By using Packify, you agree to the terms of this Privacy Policy.&#xA;Information We Collect a. Information You Provide: When you use Packify, we may collect information that you directly provide, such as your name, email address, and other contact information.&#xA;b. Automatically Collected Information: We may use third-party services, including Google Analytics, to collect information about your use of the App.</description>
-    </item>
-    <item>
-      <title>Zero to Hugo</title>
-      <link>/blogs/zerotohugo/</link>
-      <pubDate>Thu, 23 May 2024 09:30:21 +0530</pubDate>
-      <guid>/blogs/zerotohugo/</guid>
-      <description>Introductionsss In this article, I&amp;rsquo;ll write about how to create your personal website or landing page or any website which you want to show to internet with Hugo and Github Pages. And ofcourse with nocode.&#xA;No matter what field you work in, with a little bit of Git and Terminal knowladge, you can easily set up and deploy the site you want. If you&amp;rsquo;re ready, let&amp;rsquo;s start.&#xA;First of all, what is Hugo?</description>
     </item>
   </channel>
 </rss>
