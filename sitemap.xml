@@ -37,4 +37,16 @@
   </url><url>
     <loc>/categories/</loc>
   </url>
+  <url>
+    <loc>/robicall/support/en/</loc>
+  </url>
+  <url>
+    <loc>/robicall/support/tr/</loc>
+  </url>
+  <url>
+    <loc>/robicall/privacy/en/</loc>
+  </url>
+  <url>
+    <loc>/robicall/privacy/tr/</loc>
+  </url>
 </urlset>
